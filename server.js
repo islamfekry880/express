@@ -5,11 +5,10 @@ app.set("view engine","ejs")
 
 app.get("/",(req,res)=>{
 console.log("here")
-res.render("index",{ Textssssss:"semsem",text:"zzz"})
+res.render("index")
 })
 
-const userrouter=require("./routes/users")
-
+const router=require("./routes/users")
 app.use("/users",router)
 
 app.listen(3000)
